@@ -9,7 +9,7 @@ This app allows users to add, mark as complete, and delete tasks — helping man
 - ➕ Add new tasks easily  
 - ✅ Mark tasks as completed  
 - ❌ Delete unwanted tasks  
-- 💾 Tasks persist in local storage (if implemented)  
+- 💾 Tasks persist in local storage 
 - 🖥️ Fully responsive using Bootstrap  
 
 ---
