@@ -7,7 +7,22 @@
     margin:0px;
     padding:30px;
    
+}
 
+.user-input{
+   width:60%;
+   height:40px;
+   padding-left:10px;
+   border:0px solid black;
+   border-radius: 8px;
+}
+
+
+ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-type: none;
+  margin-top: 10px; /* optional */
 }
 
 .heading{
@@ -20,13 +35,10 @@
      background-color: aquamarine;
      border:1px solid ;
      border-radius: 10px;
-    
-     margin-bottom: 10px;
-     height:40px;
-     width:120%;
-   padding-left: 10px;
-   
-   align-items: center;
+     margin-bottom: 10px; 
+    padding-left: 10px;
+     align-items: center;
+    display: flex;
 }
 
 

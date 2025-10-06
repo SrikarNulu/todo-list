@@ -55,6 +55,8 @@ function onTodoStatusChange(checkboxId, labelId, todoId) {
 
 todoList = getTodoItems();
 
+
+
 saveBtn.onclick = function(){
     let todo = JSON.stringify(todoList);
     localStorage.setItem("todoList",todo);
@@ -150,17 +152,22 @@ function addListItem(value){
      createListItem(newTodo);
 }
 
+function addTask() {
+  if (input.value.trim() === "") {
+    alert("Please enter a task..");
+  } else {
+    addListItem(input.value.trim());
+    input.value = "";
+  }
+}
 
-addButton.onclick = function(){
-    if(input.value === ""){
-        alert("Please enter a task..")
-    }else{
-        addListItem(input.value);
-        input.value="";
-    }
-};
+input.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
 
-
+addButton.onclick = addTask;
 
 
 
